@@ -1,0 +1,36 @@
+@use 'variables' as *;
+@use 'mixins';
+
+#hero-area,#features-area {
+  background-image: url('../img/Background Image.webp'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  width: 100%;
+  min-height: 80vh;
+
+
+  .container.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero-text {
+    background-color: $text-light;
+    padding: 20px;
+    border-radius: 10px;
+
+    .app-img {
+      margin-top: 40px;
+    }
+  }
+
+  .hero-img {
+    order: 1; 
+  }
+
+}
+

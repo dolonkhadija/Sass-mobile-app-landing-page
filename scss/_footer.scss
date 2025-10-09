@@ -1,0 +1,37 @@
+@use 'variables' as *;
+@use 'mixins';
+
+#footer-area{
+  padding: 100px;
+  background-color: $card-color;
+  color: $text-light;
+  .footer-box{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+         @media only screen and (min-width: $small) and (max-width: $medium){
+       flex-wrap: wrap;
+       text-align: center;
+        gap: 30px;
+  }
+     input {
+      padding: 10px 30px;
+  
+     }
+
+
+    }
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: $text-light;
+  border-radius: 10px;
+ margin-top: 10px;
+}
+.copy{
+  text-align: center;
+  padding: 10px 0;
+}
+

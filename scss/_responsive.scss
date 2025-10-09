@@ -1,0 +1,84 @@
+ @use 'variables' as *;
+@use 'mixins';
+
+  
+  @media only screen and (min-width: $small) and (max-width: $medium){
+
+#header-area{
+  .inner{
+    display: block;
+  }
+  .top-header-area{
+    .address,.email,.phone{
+      display: none;
+    }
+    .social-area{
+      ul{
+        text-align: center;
+      }
+    }
+    .mobile-bars{
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      i{
+        color: $text-light;
+        font-size: 25px;
+        cursor:pointer;
+      }
+    }
+  }
+  .main-header{
+    .logo-area{
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
+}
+// hero section
+@media only screen and (min-width: $small) and (max-width: $medium){
+    .container.inner {
+      flex-wrap: wrap; 
+      flex-direction: column-reverse; 
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-img {
+      order: 1; 
+      width: 80%;
+    }
+
+    .hero-text {
+      order: 2;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+// about section
+@media only screen and (min-width: $small) and (max-width: $medium){
+  #about-area{
+    .container{
+      width: 100%;
+      .col1{
+        text-align: center;
+      }
+      .col2{
+        .img{
+          width: 100%;
+        }
+        .main-card{
+          display: block;
+        .card{
+          display: block;
+        
+         }
+        }
+
+      }
+    }
+  }
+}

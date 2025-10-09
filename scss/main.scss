@@ -1,0 +1,17 @@
+// style.scss
+// sass --watch scss:css
+
+
+@use 'variables' as *;
+@use 'mixins';
+@use 'global';
+@use 'header';
+@use 'hero';
+@use 'about';
+@use 'features';
+@use 'app-screens';
+@use 'download';
+@use 'testimonials';
+@use 'faq';
+@use 'footer';
+@use 'responsive'

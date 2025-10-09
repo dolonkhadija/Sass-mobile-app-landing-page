@@ -1,0 +1,33 @@
+@use 'variables' as *;
+@use 'mixins';
+
+#faq-area{
+  padding: 100px;
+ 
+ .col3{
+  text-align: center;
+ }
+ .flex{
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+       @media only screen and (min-width: $small) and (max-width: $medium){
+       flex-wrap: wrap;
+       text-align: center;
+  }
+    
+      
+  }
+  .box1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    a{
+      text-decoration: underline;
+      font-size: 18px;
+    }
+  }
+ }
+
+

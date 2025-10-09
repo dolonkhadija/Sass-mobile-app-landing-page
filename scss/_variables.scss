@@ -1,0 +1,27 @@
+// _variables.scss
+
+$primary-color: #5956e9;
+$secondary-color:#423fd9;
+$hover-color:#6461fa;
+$text-light: #ffffff;
+$text-dark: #333;
+$card-color:#5851ea;
+$font-stack: 'Poppins', sans-serif;
+
+// font weight
+$fontsm:400;
+$fontmd:600;
+$fontxl:800;
+
+// padding
+$paddingsm:10px 0;
+// width
+$small:200px;
+$medium:767px;
+.container{
+  width: 1400px;
+  margin: 0 auto;
+  @media only screen and (min-width: $small) and (max-width: $medium){
+    width: 96%;
+  }
+}

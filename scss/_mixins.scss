@@ -1,0 +1,28 @@
+
+@use 'variables' as *;
+
+@mixin social{
+  ul{
+    text-align: right;
+    li{
+      margin-left: 15px;
+    }
+
+    a{
+      display: block;
+      background-color: aliceblue;
+      width: 40px;
+      height: 40px;
+      font-size: 17px;
+      text-align: center;
+      padding-top: 8px;
+      border-radius: 30px;
+      i{
+       margin: 0;
+     }
+     &:hover{
+      background: $hover-color;
+     }
+    }
+  }
+}

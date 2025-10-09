@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use 'mixins';
+
+#testmonials-area{
+padding:50px 100px;
+  .col3{
+    padding-top: 300px;
+    text-align: center;
+    @media only screen and (min-width: $small) and (max-width: $medium){
+     padding-top: 100px;
+  }
+}
+.h2{
+  margin-top: 70px;
+}
+.flex{
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+      @media only screen and (min-width: $small) and (max-width: $medium){
+       flex-wrap: wrap;
+  }
+  .box1{
+    text-align: center;
+        box-shadow: 0 4px 12px rgba(0,  0,  0, 0.1); 
+    padding: 20px;
+ h3{
+  padding: 10px 0;
+ }
+ p{
+  padding: 10px 0;
+ }
+  }
+}
+}
